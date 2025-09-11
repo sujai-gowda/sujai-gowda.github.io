@@ -1,0 +1,42 @@
+.my-btn {
+  background-color: #001f5b;
+  color: white;
+  border: none;
+}
+.my-btn:hover {
+  background-color: #001743;
+}
+
+.heading span {
+  color: rgb(115, 3, 167);
+}
+
+.about-text {
+  max-width: 200px;
+}
+
+.project-card {
+  background-color: #002855;
+  color: #ffffff;
+  border: none;
+}
+
+.project-card .card-text {
+  color: #231ac3;
+  font-weight: bold;
+}
+.project-card .card-title {
+  color: #e7e40b;
+  background-color: #002855;
+}
+.project-card .btn {
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.project-card .btn:hover {
+  background-color: #2a0386;
+  color: #ecf0f5;
+}
