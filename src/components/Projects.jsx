@@ -22,7 +22,11 @@ function Projects() {
                   Web3.0 decentralised Application. Which is a ticket booking
                   platform which runs on ethereum blockchain network.
                 </p>
-                <a href="#" className="btn btn-outline-light">
+                <a
+                  href="https://github.com/sujai-gowda/Dapp_Cinemas"
+                  target="_blank"
+                  className="btn btn-outline-light"
+                >
                   View
                 </a>
               </div>
@@ -37,7 +41,11 @@ function Projects() {
                   productivity and reaching daily goals for any particular
                   activity.
                 </p>
-                <a href="#" className="btn btn-outline-light">
+                <a
+                  href="https://github.com/sujai-gowda/TrackTime-"
+                  target="_blank"
+                  className="btn btn-outline-light"
+                >
                   View
                 </a>
               </div>
@@ -51,7 +59,11 @@ function Projects() {
                   Predicting the patient's disease using Naiye-Bayes
                   Algorithm,with symptoms as a input from the patient.
                 </p>
-                <a href="#" className="btn btn-outline-light">
+                <a
+                  href="https://github.com/sujai-gowda/Disease_prediction"
+                  target="_blank"
+                  className="btn btn-outline-light"
+                >
                   View
                 </a>
               </div>
@@ -68,7 +80,11 @@ function Projects() {
                   Damascena. Applied SVM to differentiate the rose with the
                   created dataset.
                 </p>
-                <a href="#" className="btn btn-outline-light">
+                <a
+                  href="https://github.com/sujai-gowda/Disease_prediction"
+                  target="_blank"
+                  className="btn btn-outline-light"
+                >
                   View
                 </a>
               </div>
