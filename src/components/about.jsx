@@ -52,7 +52,7 @@ function About() {
 
             {/* Resume Button */}
             <a
-              href="https://drive.google.com/your-resume-link"
+              href="https://drive.google.com/file/d/1_i0R3HusXvSJhqM11lHjPi4BJKNzxxbH/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary px-4 py-2 rounded-pill mt-3"
