@@ -6,7 +6,7 @@ function Projects() {
       id="projects"
       className="vh-100 d-flex flex-column justify-content-center align-items-center bg-light"
       style={{
-        backgroundImage: "url('/Home_BG.gif')",
+        backgroundImage: "url('/BackGroundIMG.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

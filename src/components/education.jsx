@@ -3,7 +3,7 @@ import "../App.css";
 function Education() {
   return (
     <section
-      className="vh-100 justify-content-center align-items-center education "
+      className="vh-10 justify-content-center align-items-center education "
       id="education"
       style={{ backgroundColor: "#aabdccff" }}
     >
@@ -19,6 +19,33 @@ function Education() {
       </p>
 
       <div className="box-container">
+        <div className="container my-4">
+          <div className="row justify-content-center">
+            <div className="col-md-10">
+              <div className="row align-items-center bg-light text-black rounded shadow-lg">
+                <div className="col-md-4 text-center">
+                  <img
+                    draggable="false"
+                    src="/Rvce.jpg"
+                    alt="College"
+                    className="img-fluid rounded"
+                    style={{ maxHeight: "180px", objectFit: "cover" }}
+                  />
+                </div>
+
+                <div className="col-md-8">
+                  <div className="content p-3">
+                    <h3>MTech in Software Engineering</h3>
+                    <p>R V College of Engineering | Bengaluru</p>
+                    <h4>
+                      <span>2025 | Pursuing</span>
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="container my-4">
           <div className="row justify-content-center">
             <div className="col-md-10">

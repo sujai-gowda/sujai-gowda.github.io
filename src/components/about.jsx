@@ -32,14 +32,14 @@ function About() {
           <div className="about-text col-md-7 text-black">
             <p>
               Hi, I'm <strong>Sujai</strong>. I am a computer science
-              undergraduate from <br />
-              Global Academy Of Technology, Bengaluru. Passionate about
+              graduate. Currently<br />
+              pursuing MTech in Software Engineering in R V College of <br/>Engineering, Bengaluru. Passionate about improving my
               <br />
-              improving my coding skills exploring new technologies and
-              <br /> solving problems. I believe technology is a tool to create
+              coding skills exploring new technologies and solving problems.
+              <br /> I believe technology is a tool to create meaningful experiences,
               <br />
-              meaningful experiences, and I'm always excited to learn and <br />
-              grow in this journey 🚀.
+               and I'm always excited to learn and grow in this journey 🚀.<br />
+              
             </p>
 
             {/* Contact Info */}
@@ -52,7 +52,7 @@ function About() {
 
             {/* Resume Button */}
             <a
-              href="https://drive.google.com/file/d/1_i0R3HusXvSJhqM11lHjPi4BJKNzxxbH/view?usp=sharing"
+              href="https://drive.google.com/file/d/1efSnCf04a4d6Sj96hGBCyTKJQ1MRizVT/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary px-4 py-2 rounded-pill mt-3"
