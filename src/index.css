@@ -1,3 +1,167 @@
+:root {
+  --bg-primary: #0a0a0a; /* Deepest black/grey */
+  --bg-secondary: #121212; /* Slightly lighter */
+  --bg-tertiary: #1a1a1a; /* Lighter black for specific sections */
+  --card-bg: #27272a; /* Lighter black (Zinc 800) for cards */
+  --text-primary: #f8fafc; /* White/Slate 50 */
+  --text-secondary: #94a3b8; /* Slate 400 */
+  --accent-color: #2dd4bf; /* Teal 400 */
+  --accent-glow: rgba(45, 212, 191, 0.4);
+  --glass-bg: rgba(39, 39, 42, 0.6); /* Lighter glass base */
+  --glass-border: rgba(255, 255, 255, 0.08);
+  
+  /* White Grid Pattern Background */
+.bg-grid-pattern {
+  background-color: #000000;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Premium Gradient Colors */
+  --gradient-1: #1a1a2e;
+  --gradient-2: #16213e;
+  --gradient-3: #1f4068;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Background Animation Implementation */
+.bg-fixed-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% -20%, #1e1b4b 0%, #000000 60%);
+}
+
+.blob-1, .blob-2, .blob-3 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  animation: float 20s infinite ease-in-out;
+}
+
+.blob-1 {
+  background: #4c1d95; /* Deep Violet */
+  width: 600px;
+  height: 600px;
+  top: -10%;
+  left: -10%;
+  animation-delay: 0s;
+}
+
+.blob-2 {
+  background: #0d9488; /* Teal */
+  width: 500px;
+  height: 500px;
+  bottom: 10%;
+  right: -5%;
+  animation-delay: -5s;
+}
+
+.blob-3 {
+  background: #be185d; /* Pink/Magenta Accent */
+  width: 400px;
+  height: 400px;
+  top: 40%;
+  left: 30%;
+  opacity: 0.25;
+  animation-delay: -10s;
+}
+
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+/* Floating Navbar Styles */
+.navbar-scrolled {
+  top: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: fit-content !important; /* Shrink to fit buttons */
+  min-width: 300px;
+  padding: 0.5rem 2rem !important; /* Add padding for pill shape */
+  border-radius: 50px !important;
+  background: rgba(18, 18, 28, 0.8) !important; 
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Ensure container inside scrolled navbar doesn't force full width */
+.navbar-scrolled .container {
+  width: auto !important;
+  max-width: none !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-scrolled {
+    width: 90% !important; /* On mobile, let it be wide to fit hamburger/menu */
+    top: 10px !important;
+    padding: 0.5rem 1rem !important;
+  }
 }

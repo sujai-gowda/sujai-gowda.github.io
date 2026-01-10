@@ -1,101 +1,83 @@
 import "../App.css";
+import { motion } from "framer-motion";
 
 function Education() {
+  const educationData = [
+    {
+      img: "/Rvce.jpg",
+      degree: "MTech in Software Engineering",
+      school: "R V College of Engineering | Bengaluru",
+      year: "2025 | Pursuing"
+    },
+    {
+      img: "/GAT.jpg",
+      degree: "Bachelor of Engineering in CS",
+      school: "Global Academy of Technology | Bengaluru",
+      year: "2021-2025 | Completed"
+    },
+    {
+      img: "/vidya-mandir.jpg",
+      degree: "PreUniversity | PCMB",
+      school: "Vidhya Mandir IND PU College | Bengaluru",
+      year: "2019-2021 | Completed"
+    }
+  ];
+
   return (
     <section
-      className="vh-10 justify-content-center align-items-center education "
       id="education"
-      style={{ backgroundColor: "#aabdccff" }}
+      className="position-relative"
+      style={{ background: "linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary))" }}
     >
-      <h1 className="heading text-center">
-        <br />
-        <i className="fas fa-graduation-cap"></i>
-        My <span>Education</span>
-      </h1>
+      <div className="bg-glow-2" style={{ top: "10%", left: "5%" }}></div>
 
-      <p className="qoute text-center">
-        Education is not the learning of facts, but the training of the mind to
-        think.
-      </p>
+      <div className="container">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-5"
+        >
+          <h2 className="section-title">
+            My <span className="text-gradient">Education</span>
+          </h2>
+          <p className="text-secondary lead">
+            "Education is not the learning of facts, but the training of the mind to think."
+          </p>
+        </motion.div>
 
-      <div className="box-container">
-        <div className="container my-4">
-          <div className="row justify-content-center">
-            <div className="col-md-10">
-              <div className="row align-items-center bg-light text-black rounded shadow-lg">
-                <div className="col-md-4 text-center">
-                  <img
-                    draggable="false"
-                    src="/Rvce.jpg"
-                    alt="College"
-                    className="img-fluid rounded"
-                    style={{ maxHeight: "180px", objectFit: "cover" }}
-                  />
-                </div>
-
-                <div className="col-md-8">
-                  <div className="content p-3">
-                    <h3>MTech in Software Engineering</h3>
-                    <p>R V College of Engineering | Bengaluru</p>
-                    <h4>
-                      <span>2025 | Pursuing</span>
-                    </h4>
+        <div className="row justify-content-center">
+          <div className="col-lg-10">
+            <div className="d-flex flex-column gap-4">
+              {educationData.map((edu, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  className="custom-card p-4"
+                >
+                  <div className="row align-items-center">
+                    <div className="col-md-3 text-center mb-3 mb-md-0">
+                      <img
+                        src={edu.img}
+                        alt="College"
+                        className="img-fluid rounded-3 shadow"
+                        style={{ height: "120px", width: "100%", objectFit: "cover" }}
+                      />
+                    </div>
+                    <div className="col-md-9">
+                      <h3 className="h4 fw-bold text-white mb-2">{edu.degree}</h3>
+                      <p className="text-info mb-1">{edu.school}</p>
+                      <span className="badge bg-dark border border-secondary text-secondary">
+                        {edu.year}
+                      </span>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container my-4">
-          <div className="row justify-content-center">
-            <div className="col-md-10">
-              <div className="row align-items-center bg-light text-black rounded shadow-lg">
-                <div className="col-md-4 text-center">
-                  <img
-                    draggable="false"
-                    src="/GAT.jpg"
-                    alt="College"
-                    className="img-fluid rounded"
-                    style={{ maxHeight: "180px", objectFit: "cover" }}
-                  />
-                </div>
-
-                <div className="col-md-8">
-                  <div className="content p-3">
-                    <h3>Bachelor of Engineering in Computer Science</h3>
-                    <p>Global Academy of Technology | Bengaluru</p>
-                    <h4>
-                      <span>2021-2025 | Completed</span>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="container my-4">
-          <div className="row justify-content-center">
-            <div className="col-md-10">
-              <div className="row align-items-center bg-light text-black rounded shadow-lg">
-                <div className="col-md-4 text-center">
-                  <img
-                    draggable="false"
-                    src="/vidya-mandir.jpg"
-                    alt="School"
-                    className="img-fluid rounded"
-                    style={{ maxHeight: "180px", objectFit: "cover" }}
-                  />
-                </div>
-
-                <div className="col-md-8">
-                  <div className="content p-3">
-                    <h3>PreUniversity | PCMB </h3>
-                    <p>Vidhya Mandir IND PU College | Bengaluru</p>
-                    <h4>2019-2021 | Completed</h4>
-                  </div>
-                </div>
-              </div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
