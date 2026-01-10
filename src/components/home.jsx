@@ -13,8 +13,6 @@ function Home() {
       }}
     >
       {/* Abstract Background Elements */}
-      
-
       <div className="container position-relative z-1">
         <div className="row align-items-center">
           {/* Left side: Text */}
