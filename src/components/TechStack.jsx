@@ -6,7 +6,7 @@ import * as THREE from "three";
 const words = [
   "React", "JavaScript", "HTML5", "CSS3", "Node.js", 
   "Git", "GitHub", "Python", "SQL", "MongoDB", 
-  "Bootstrap", "Tailwind", "Three.js", "Framer", "Vite"
+  "Bootstrap", "Tailwind",  "Vite", "Web3", "Blockchain"
 ];
 
 function Word({ children, ...props }) {
@@ -19,7 +19,7 @@ function Word({ children, ...props }) {
     // Make text face the camera
     ref.current.quaternion.copy(camera.quaternion);
     // Animate color
-    ref.current.material.color.lerp(color.set(hovered ? "#8b5cf6" : "#f1f5f9"), 0.1);
+    ref.current.material.color.lerp(color.set(hovered ? "#2dd4bf" : "#ffffff"), 0.1);
   });
 
   return (

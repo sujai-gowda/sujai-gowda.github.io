@@ -7,7 +7,7 @@ function About() {
     <section
       id="about"
       className="d-flex align-items-center"
-      style={{ background: "var(--bg-secondary)" }}
+      style={{ background: "linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary))" }}
     >
       <div className="container">
         <motion.div 

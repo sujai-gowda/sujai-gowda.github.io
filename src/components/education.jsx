@@ -27,7 +27,7 @@ function Education() {
     <section
       id="education"
       className="position-relative"
-      style={{ background: "var(--bg-primary)" }}
+      style={{ background: "linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary))" }}
     >
       <div className="bg-glow-2" style={{ top: "10%", left: "5%" }}></div>
 

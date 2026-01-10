@@ -28,7 +28,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      style={{ background: "var(--bg-secondary)" }}
+      style={{ background: "linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary))" }}
       className="position-relative"
     >
       <div className="bg-glow-1" style={{ top: "30%", left: "50%" }}></div>
@@ -42,7 +42,7 @@ function Projects() {
           className="text-center mb-5"
         >
           <h2 className="section-title">
-            Recent <span className="text-gradient">Projects</span>
+          <span className="text-gradient">My Projects</span>
           </h2>
           <p className="lead text-secondary">
             Here are some of the projects I've worked on recently.

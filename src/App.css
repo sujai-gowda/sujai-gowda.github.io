@@ -10,7 +10,7 @@
 
 /* Typography Gradient */
 .text-gradient {
-  background: linear-gradient(to right, #c084fc, #6366f1);
+  background: linear-gradient(to right, #2dd4bf, #06b6d4);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -18,7 +18,7 @@
 
 /* Custom Buttons */
 .btn-primary-custom {
-  background: linear-gradient(135deg, var(--accent-color), #6366f1);
+  background: linear-gradient(135deg, var(--accent-color), #06b6d4);
   color: white;
   border: none;
   padding: 0.75rem 2rem;
@@ -62,34 +62,11 @@ section {
   overflow: hidden;
 }
 
-/* Background Accents */
-.bg-glow-1 {
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
-  opacity: 0.15;
-  filter: blur(80px);
-  z-index: -1;
-}
-
-.bg-glow-2 {
-  position: absolute;
-  bottom: -10%;
-  right: -10%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, #06b6d4 0%, transparent 70%);
-  opacity: 0.15;
-  filter: blur(80px);
-  z-index: -1;
-}
+/* Old static background globs removed - replaced by animated background in index.css */
 
 /* Card Styles */
 .custom-card {
-  background: var(--bg-secondary);
+  background: var(--card-bg);
   border: 1px solid var(--glass-border);
   border-radius: 12px;
   overflow: hidden;

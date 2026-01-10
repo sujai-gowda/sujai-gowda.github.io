@@ -8,6 +8,13 @@ import Education from "./components/education";
 function App() {
   return (
     <>
+      <div className="bg-fixed-layer">
+        <div className="blob-1"></div>
+        <div className="blob-2"></div>
+        <div className="blob-3"></div>
+      </div>
+      <div className="noise-overlay"></div>
+      
       <Navbar />
       <Home />
       <About />

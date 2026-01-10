@@ -6,16 +6,14 @@ function Home() {
   return (
     <section
       id="home"
-      className="d-flex align-items-center position-relative"
+      className="d-flex align-items-center position-relative bg-grid-pattern"
       style={{
-        background: "radial-gradient(ellipse at center, #1e293b 0%, #0f172a 100%)",
         minHeight: "100vh",
         overflow: "hidden"
       }}
     >
       {/* Abstract Background Elements */}
-      <div className="bg-glow-1"></div>
-      <div className="bg-glow-2" style={{ top: "20%", right: "30%", width: "300px", height: "300px", background: "rgba(139, 92, 246, 0.2)" }}></div>
+      
 
       <div className="container position-relative z-1">
         <div className="row align-items-center">
@@ -29,7 +27,7 @@ function Home() {
               <h4 className="text-secondary fw-bold text-uppercase mb-3" style={{ letterSpacing: "3px", color: "var(--accent-color)" }}>
                 Welcome to my world
               </h4>
-              <h1 className="display-2 fw-bold mb-4 lh-sm">
+              <h1 className="display-2 fw-bold mb-4 lh-sm text-white">
                 Hi, I'm <span className="text-gradient">Sujai Gowda</span>
               </h1>
               <p className="lead text-secondary mb-5 w-75">
@@ -109,7 +107,7 @@ function Home() {
                         width: '400px',
                         height: '400px',
                         borderRadius: '50%',
-                        background: 'radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, transparent 70%)',
+                        background: 'radial-gradient(circle, rgba(45, 212, 191, 0.2) 0%, transparent 70%)',
                         zIndex: -1
                     }}
                 ></div>
