@@ -11,7 +11,6 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
       // Determine if scrolled past threshold
       if (currentScrollY > 50) {
         setScrolled(true);
